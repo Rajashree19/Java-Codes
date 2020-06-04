@@ -1,0 +1,15 @@
+//Program to illustrate hello world
+package package1;
+//Creating class
+public class HelloWorld {
+
+	public static void main(String[] args)
+	{
+		System.out.println("HELLO WORLD");
+	}
+}
+	
+  
+  
+ //OUTPUT
+ HELLO WORLD
