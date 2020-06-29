@@ -1,0 +1,43 @@
+package demo1;
+import java.util.Scanner;
+public class primeNumber {
+	
+	public static void main(String[] args) {
+		
+		int num;
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter a number greater than 1: ");
+		num=s.nextInt();
+
+		int i=1;
+		int ctr=0;
+
+		for(i=1;i<num;i++) {
+			if(num%i==0) {
+				ctr++;
+		}
+	}
+				    
+				    
+
+		if(ctr<=2) {
+			System.out.println("Prime");
+		}
+			
+		else {
+			System.out.println("Non Prime");
+		}
+
+
+
+
+
+		
+	}
+}
+
+
+//OUTPUT
+Enter a number greater than 1: 
+14
+Non Prime
