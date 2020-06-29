@@ -1,0 +1,35 @@
+package demo1;
+import java.util.Scanner;
+
+public class MinToYears {
+	
+	public static void main(String[] args) {
+		
+		double minutes;
+		double days, years;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("ENTER NUMBER OF MINUTES ");
+		minutes=sc.nextDouble();
+		
+		years=(minutes/(525600));  //Quotient gives years
+		
+		days=(minutes%(525600));   
+		days=days/(1440);				//Condition for one day
+		
+		//Type Conversion
+		int m=(int) minutes;
+		int y=(int) years;
+		int d=(int) days;
+		
+		
+	System.out.println("Minutes " +m+ "=\n"+y+ " Years and\n " +d+ " Days!");
+	}
+
+}
+
+//OUTPUT
+ENTER NUMBER OF MINUTES 
+3456789
+Minutes 3456789=
+6 Years and
+ 210 Days!
