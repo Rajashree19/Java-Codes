@@ -1,0 +1,44 @@
+package demo1;
+import java.util.Scanner;
+
+public class Fibonacci {
+
+	public static void main(String[] args) {
+		int p=0,q=1,i=0,n;
+		
+		Scanner s= new Scanner(System.in);
+		System.out.println("Enter number of terms: ");
+		n=s.nextInt();
+		
+		System.out.println("The Fibonacci Series is: ");
+		for(i=0;i<n;i++) {
+			
+			System.out.println(p);			//Printing Series
+			int m=p+q; 			//Updating value
+			p=q;
+			q=m;
+			
+			
+			
+		}
+		
+		
+}
+}
+
+
+
+//OUTPUT
+Enter number of terms: 
+10
+The Fibonacci Series is: 
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
