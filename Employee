@@ -1,0 +1,52 @@
+package demo1;
+
+
+public class Employee {
+	public String name="";
+    public int salary=0;
+    public int joiningDate=0;
+    
+    public void getData(String name, int salary, int joiningDate)
+    {
+        this.name = name;
+        this.salary = salary;
+        this.joiningDate = joiningDate;
+    }
+    
+	public void display() {
+		
+		System.out.println("Employee Details:");
+	    System.out.println("The name of employee is: "+ name);
+		System.out.println("The salary of employee is: "+salary);
+		System.out.println("The date of joining of employee is: "+joiningDate);
+		System.out.println("_________________________________________________");
+	}
+
+
+	  public static void main(String[] args) {
+		 Employee emp=new Employee();			//initialize to null always
+		 emp.getData("Rahul",250000,1992);
+		 emp.display();
+		 emp.getData("Robert",350000,1988);
+		 emp.display();
+		 emp.getData("Michael",200000,1995);
+		 emp.display();
+		
+	}}
+
+//OUTPUT
+Employee Details:
+The name of employee is: Rahul
+The salary of employee is: 250000
+The date of joining of employee is: 1992
+_________________________________________________
+Employee Details:
+The name of employee is: Robert
+The salary of employee is: 350000
+The date of joining of employee is: 1988
+_________________________________________________
+Employee Details:
+The name of employee is: Michael
+The salary of employee is: 200000
+The date of joining of employee is: 1995
+_________________________________________________
